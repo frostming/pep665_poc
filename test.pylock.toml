@@ -1,0 +1,121 @@
+version = "1.0"
+created-at = "2021-12-21T10:36:38Z"
+
+[metadata]
+requires = ["mousebender", "coveragepy"]
+requires-python = "==3.10"
+
+[[package.mousebender."2.0.0"]]
+filename = "mousebender-2.0.0-py3-none-any.whl#sha256=a6f9adfbd17bfb0e6bb5de9a27083e01dfb86ed9c3861e04143d9fd6db373f7c"
+url = "https://files.pythonhosted.org/packages/f4/b3/f6fdbff6395e9b77b5619160180489410fb2f42f41272994353e7ecf5bdf/mousebender-2.0.0-py3-none-any.whl#sha256=a6f9adfbd17bfb0e6bb5de9a27083e01dfb86ed9c3861e04143d9fd6db373f7c"
+requires-python = ">=3.6,<4"
+requires = ["attrs<20.0.0,>=19.3.0", "packaging<21.0,>=20.3"]
+hashes.sha256="a6f9adfbd17bfb0e6bb5de9a27083e01dfb86ed9c3861e04143d9fd6db373f7c"
+
+[[package.attrs."19.3.0"]]
+filename = "attrs-19.3.0-py2.py3-none-any.whl#sha256=08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c"
+url = "https://files.pythonhosted.org/packages/a2/db/4313ab3be961f7a763066401fb77f7748373b6094076ae2bda2806988af6/attrs-19.3.0-py2.py3-none-any.whl#sha256=08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c"
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+requires = []
+hashes.sha256="08a96c641c3a74e44eb59afb61a24f2cb9f4d7188748e76ba4bb5edfa3cb7d1c"
+
+[[package.coveragepy."1.6.0"]]
+filename = "coveragePy-1.6.0-py3-none-any.whl#sha256=37a955c9e95da9a6b5c8ae445eb60856e9e631a07528547ff0e45aadb701d925"
+url = "https://files.pythonhosted.org/packages/f6/13/63e6890cc90c9903bd4d4903421fc84baf6d35b6bd10feb293a1545f2da7/coveragePy-1.6.0-py3-none-any.whl#sha256=37a955c9e95da9a6b5c8ae445eb60856e9e631a07528547ff0e45aadb701d925"
+requires = ["flask==1.0.2", "coverage==4.5.3", "requests==2.25.0"]
+hashes.sha256="37a955c9e95da9a6b5c8ae445eb60856e9e631a07528547ff0e45aadb701d925"
+
+[[package.flask."1.0.2"]]
+filename = "Flask-1.0.2-py2.py3-none-any.whl#sha256=a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05"
+url = "https://files.pythonhosted.org/packages/7f/e7/08578774ed4536d3242b14dacb4696386634607af824ea997202cd0edb4b/Flask-1.0.2-py2.py3-none-any.whl#sha256=a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05"
+requires = ["Werkzeug>=0.14", "Jinja2>=2.10", "itsdangerous>=0.24", "click>=5.1"]
+hashes.sha256="a080b744b7e345ccfcbc77954861cb05b3c63786e93f2b3875e0913d44b43f05"
+
+[[package.requests."2.25.0"]]
+filename = "requests-2.25.0-py2.py3-none-any.whl#sha256=e786fa28d8c9154e6a4de5d46a1d921b8749f8b74e28bde23768e5e16eece998"
+url = "https://files.pythonhosted.org/packages/39/fc/f91eac5a39a65f75a7adb58eac7fa78871ea9872283fb9c44e6545998134/requests-2.25.0-py2.py3-none-any.whl#sha256=e786fa28d8c9154e6a4de5d46a1d921b8749f8b74e28bde23768e5e16eece998"
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+requires = ["chardet<4,>=3.0.2", "idna<3,>=2.5", "urllib3<1.27,>=1.21.1", "certifi>=2017.4.17"]
+hashes.sha256="e786fa28d8c9154e6a4de5d46a1d921b8749f8b74e28bde23768e5e16eece998"
+
+[[package.itsdangerous."2.0.1"]]
+filename = "itsdangerous-2.0.1-py3-none-any.whl#sha256=5174094b9637652bdb841a3029700391451bd092ba3db90600dea710ba28e97c"
+url = "https://files.pythonhosted.org/packages/9c/96/26f935afba9cd6140216da5add223a0c465b99d0f112b68a4ca426441019/itsdangerous-2.0.1-py3-none-any.whl#sha256=5174094b9637652bdb841a3029700391451bd092ba3db90600dea710ba28e97c"
+requires-python = ">=3.6"
+requires = []
+hashes.sha256="5174094b9637652bdb841a3029700391451bd092ba3db90600dea710ba28e97c"
+
+[[package.chardet."3.0.4"]]
+filename = "chardet-3.0.4-py2.py3-none-any.whl#sha256=fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
+url = "https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl#sha256=fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
+requires = []
+hashes.sha256="fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
+
+[[package.idna."2.10"]]
+filename = "idna-2.10-py2.py3-none-any.whl#sha256=b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
+url = "https://files.pythonhosted.org/packages/a2/38/928ddce2273eaa564f6f50de919327bf3a00f091b5baba8dfa9460f3a8a8/idna-2.10-py2.py3-none-any.whl#sha256=b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+requires = []
+hashes.sha256="b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0"
+
+[[package.packaging."20.9"]]
+filename = "packaging-20.9-py2.py3-none-any.whl#sha256=67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"
+url = "https://files.pythonhosted.org/packages/3e/89/7ea760b4daa42653ece2380531c90f64788d979110a2ab51049d92f408af/packaging-20.9-py2.py3-none-any.whl#sha256=67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+requires = ["pyparsing>=2.0.2"]
+hashes.sha256="67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a"
+
+[[package.jinja2."3.0.3"]]
+filename = "Jinja2-3.0.3-py3-none-any.whl#sha256=077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8"
+url = "https://files.pythonhosted.org/packages/20/9a/e5d9ec41927401e41aea8af6d16e78b5e612bca4699d417f646a9610a076/Jinja2-3.0.3-py3-none-any.whl#sha256=077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8"
+requires-python = ">=3.6"
+requires = ["MarkupSafe>=2.0"]
+hashes.sha256="077ce6014f7b40d03b47d1f1ca4b0fc8328a692bd284016f806ed0eaca390ad8"
+
+[[package.werkzeug."2.0.2"]]
+filename = "Werkzeug-2.0.2-py3-none-any.whl#sha256=63d3dc1cf60e7b7e35e97fa9861f7397283b75d765afcaefd993d6046899de8f"
+url = "https://files.pythonhosted.org/packages/1e/73/51137805d1b8d97367a8a77cae4a792af14bb7ce58fbd071af294c740cf0/Werkzeug-2.0.2-py3-none-any.whl#sha256=63d3dc1cf60e7b7e35e97fa9861f7397283b75d765afcaefd993d6046899de8f"
+requires-python = ">=3.6"
+requires = []
+hashes.sha256="63d3dc1cf60e7b7e35e97fa9861f7397283b75d765afcaefd993d6046899de8f"
+
+[[package.click."8.0.3"]]
+filename = "click-8.0.3-py3-none-any.whl#sha256=353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"
+url = "https://files.pythonhosted.org/packages/48/58/c8aa6a8e62cc75f39fee1092c45d6b6ba684122697d7ce7d53f64f98a129/click-8.0.3-py3-none-any.whl#sha256=353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"
+requires-python = ">=3.6"
+requires = []
+hashes.sha256="353f466495adaeb40b6b5f592f9f91cb22372351c84caeb068132442a4518ef3"
+
+[[package.certifi."2021.10.8"]]
+filename = "certifi-2021.10.8-py2.py3-none-any.whl#sha256=d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
+url = "https://files.pythonhosted.org/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl#sha256=d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
+requires = []
+hashes.sha256="d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
+
+[[package.urllib3."1.26.7"]]
+filename = "urllib3-1.26.7-py2.py3-none-any.whl#sha256=c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
+url = "https://files.pythonhosted.org/packages/af/f4/524415c0744552cce7d8bf3669af78e8a069514405ea4fcbd0cc44733744/urllib3-1.26.7-py2.py3-none-any.whl#sha256=c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+requires = []
+hashes.sha256="c4fdf4019605b6e5423637e01bc9fe4daef873709a7973e195ceba0a62bbc844"
+
+[[package.coverage."4.5.3"]]
+filename = "coverage-4.5.3-cp26-cp26m-macosx_10_12_x86_64.whl#sha256=a5d8f29e5ec661143621a8f4de51adfb300d7a476224156a39a392254f70687b"
+url = "https://files.pythonhosted.org/packages/82/38/9e4f8a44215adf2880aaad47c4789c99753d449f1e544e0907e8b021fea5/coverage-4.5.3-cp26-cp26m-macosx_10_12_x86_64.whl#sha256=a5d8f29e5ec661143621a8f4de51adfb300d7a476224156a39a392254f70687b"
+requires-python = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, <4"
+requires = []
+hashes.sha256="a5d8f29e5ec661143621a8f4de51adfb300d7a476224156a39a392254f70687b"
+
+[[package.pyparsing."3.0.6"]]
+filename = "pyparsing-3.0.6-py3-none-any.whl#sha256=04ff808a5b90911829c55c4e26f75fa5ca8a2f5f36aa3a51f68e27033341d3e4"
+url = "https://files.pythonhosted.org/packages/a0/34/895006117f6fce0b4de045c87e154ee4a20c68ec0a4c9a36d900888fb6bc/pyparsing-3.0.6-py3-none-any.whl#sha256=04ff808a5b90911829c55c4e26f75fa5ca8a2f5f36aa3a51f68e27033341d3e4"
+requires-python = ">=3.6"
+requires = []
+hashes.sha256="04ff808a5b90911829c55c4e26f75fa5ca8a2f5f36aa3a51f68e27033341d3e4"
+
+[[package.markupsafe."2.0.1"]]
+filename = "MarkupSafe-2.0.1-cp310-cp310-macosx_10_9_universal2.whl#sha256=d8446c54dc28c01e5a2dbac5a25f071f6653e6e40f3a8818e8b45d790fe6ef53"
+url = "https://files.pythonhosted.org/packages/81/8b/f28eac2790d49dde61f89ae9e007ac65002edc90bb2dd63c3b9e653820d2/MarkupSafe-2.0.1-cp310-cp310-macosx_10_9_universal2.whl#sha256=d8446c54dc28c01e5a2dbac5a25f071f6653e6e40f3a8818e8b45d790fe6ef53"
+requires-python = ">=3.6"
+requires = []
+hashes.sha256="d8446c54dc28c01e5a2dbac5a25f071f6653e6e40f3a8818e8b45d790fe6ef53"

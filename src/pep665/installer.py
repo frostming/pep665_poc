@@ -33,6 +33,9 @@ def validate_metadata(metadata):
     if metadata.get("tag"):
         if not validate_wheel_tag(metadata["tag"]):
             return False
+    if metadata.get("requires-python"):
+        if PYTHON_VERSION not in SpecifierSet(metadata["requires-python"]):
+            return False
     return True
 
 
@@ -121,7 +124,10 @@ def install_from_lockfile(namespace):
     with open(namespace.infile) as f:
         lockfile_data = tomlkit.parse(f.read())
     if not validate_metadata(lockfile_data["metadata"]):
-        raise ValueError(f"The environment does't match lockfile: {namespace.infile}")
+        raise ValueError(
+            "The environment does't match lockfile metadata: "
+            f"{lockfile_data['metadata']}"
+        )
     to_install = lockfile_data["metadata"]["requires"]
     collected = {}
     with TemporaryDirectory(prefix="pep665-installer-") as downloaddir:
@@ -154,7 +160,7 @@ def install_from_lockfile(namespace):
                     break
             else:
                 raise ValueError(
-                    f"Can't find an package entry for {name} that satisfies "
+                    f"Can't find a package entry for {name} that satisfies "
                     "the environment."
                 )
 

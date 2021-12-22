@@ -17,6 +17,7 @@ from packaging.version import InvalidVersion, Version
 from resolvelib import BaseReporter, Resolver
 
 from .provider import ExtrasProvider
+from .tags import validate_wheel_tag
 from .writer import format_resolution
 
 PYTHON_VERSION = Version(python_version())
@@ -73,7 +74,7 @@ def get_project_from_pypi(project, extras):
     data = urlopen(url).read()
     doc = html5lib.parse(data, namespaceHTMLElements=False)
     for i in doc.findall(".//a"):
-        url = i.attrib["href"]
+        url = i.attrib["href"].partition("#")[0]
         py_req = i.attrib.get("data-requires-python")
         # Skip items that need a different Python version
         if py_req:
@@ -87,16 +88,16 @@ def get_project_from_pypi(project, extras):
         if not filename.endswith(".whl"):
             continue
 
-        # TODO: Handle compatibility tags?
-
         # Very primitive wheel filename parsing
-        name, version = filename[:-4].split("-")[:2]
+        name, version, wheel_tag = filename[:-4].split("-", 2)
+        if not validate_wheel_tag(wheel_tag):
+            continue
+
         try:
             version = Version(version)
         except InvalidVersion:
             # Ignore files with invalid versions
             continue
-
         yield Candidate(name, version, url=url, extras=extras)
 
 

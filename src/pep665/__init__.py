@@ -1,7 +1,9 @@
 import argparse
+import os
 import sys
 
 from .locker import lock
+from .installer import install_from_lockfile
 
 PYTHON_VERSION = f"{sys.version_info.major}.{sys.version_info.minor}"
 
@@ -26,3 +28,18 @@ def lock_main():
         default="requirements.txt",
     )
     return lock(parser.parse_args())
+
+
+def install_main():
+    parser = argparse.ArgumentParser("pep665-install", description="PEP 665 installer")
+    parser.add_argument(
+        "-i",
+        "--infile",
+        help="Install packages from the given lock file",
+        required=True,
+    )
+    parser.add_argument(
+        "-v", "--verbose", help="See the verbose output", action="store_true"
+    )
+    args = parser.parse_args()
+    return install_from_lockfile(args)

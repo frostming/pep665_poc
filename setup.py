@@ -6,5 +6,10 @@ setup(
     install_requires=["resolvelib", "installer", "html5lib", "packaging", "tomlkit"],
     packages=find_packages("src"),
     package_dir={"": "src"},
-    entry_points={"console_scripts": ["pep665-lock = pep665:lock_main"]},
+    entry_points={
+        "console_scripts": [
+            "pep665-lock = pep665:lock_main",
+            "pep665-install = pep665:install_main",
+        ]
+    },
 )

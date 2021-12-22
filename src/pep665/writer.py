@@ -3,7 +3,7 @@ import os
 import tomlkit
 import datetime
 
-from tomlkit.items import AoT, DottedKey
+from tomlkit.items import DottedKey
 
 
 SPEC_VERSION = "1.0"

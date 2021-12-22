@@ -23,6 +23,20 @@ options:
                         Read dependencies from the given requirements file
 ```
 
+## Installer
+
+```
+usage: pep665-install [-h] -i INFILE [-v]
+
+PEP 665 installer
+
+options:
+  -h, --help            show this help message and exit
+  -i INFILE, --infile INFILE
+                        Install packages from the given lock file
+  -v, --verbose         See the verbose output
+```
+
 ## Caveats
 
 Requirements with extras are not supported by this example.

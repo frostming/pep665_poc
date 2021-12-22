@@ -39,4 +39,5 @@ options:
 
 ## Caveats
 
-Requirements with extras are not supported by this example.
+- Requirements with extras are not supported by this example.
+- The locker is not cross-platform. Namely you must install with the same python version and environment.

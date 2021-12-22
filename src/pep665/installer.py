@@ -86,10 +86,10 @@ def _get_script_kind():
     return plat
 
 
-def install_package(wheel):
+def install_package(wheel, scheme):
     logger.info("Installing package %s...", wheel.split("-", 1)[0])
     destination = SchemeDictionaryDestination(
-        sysconfig.get_paths(),
+        scheme,
         interpreter=sys.executable,
         script_kind=_get_script_kind(),
     )
@@ -159,7 +159,7 @@ def install_from_lockfile(namespace):
                 )
 
         for name, package in collected.items():
-            install_package(package[1])
+            install_package(package[1], sysconfig.get_paths())
     print(
         "Installed packages:",
         ", ".join(

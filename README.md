@@ -2,6 +2,16 @@
 
 A POC implementation of PEP 665
 
+## Installation
+
+Install with `pip`:
+
+```bash
+pip install git+https://github.com/frostming/pep665_poc#egg=pep665_poc
+```
+
+_As a POC, this package won't be published to PyPI._
+
 ## Locker
 
 The locker is adapted from [resolvelib's example](https://github.com/sarugaku/resolvelib/blob/master/examples/pypi_wheel_provider.py).
